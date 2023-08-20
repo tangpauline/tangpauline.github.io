@@ -141,23 +141,32 @@ body {
 
 
 /********** HEADER SECTION **********/
-header {
+#header {
 	min-height: calc(100vh - 70px);
     width:100%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
-#header-text {
-	margin: auto auto;
+.head {
+	display: flex;
+	width: 100%;
+	height: calc(100vh - 120px);
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header-text {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-#header-text h1 {
+.header-text h1 {
     font-size: 75px;
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
@@ -167,7 +176,7 @@ header {
 	align-items: center;
 }
 
-#header-text h2 {
+.header-text h2 {
     font-size: 30px;
 	margin: 0;
 	color: #614b39;
