@@ -365,7 +365,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	min-width: 350px;
+	min-width: 300px;
 }
 
 /* Skills: courses */
