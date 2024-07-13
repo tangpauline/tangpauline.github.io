@@ -267,6 +267,7 @@ body {
 
 /* About me heading */
 .about-head {
+	margin: 1em;
 	display: block;
 	flex-direction: column;
 	width: fit-content;
@@ -363,6 +364,7 @@ body {
 
 .skills-courses {
 	display: flex;
+	flex: 1;
 	flex-direction: column;
 	flex-wrap: wrap;
 	min-width: 300px;
@@ -390,6 +392,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	flex: 1;
 }
 
 .skills-tech h2 {
@@ -448,13 +451,18 @@ body {
 }
 
 /* Heading */
-.project-head {
-	display: block;
-	width: fit-content;
-	justify-content: center;
+.project-head-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
-	text-align: left;
-	margin: auto auto;
+}
+
+.project-head {
+	margin: 1em;
+	display: block;
+	flex-direction: column;
+	width: fit-content;
 }
 
 #proj-head-1 {
@@ -554,6 +562,7 @@ body {
 	font-size: 25px;
 	text-decoration: none;
 	color: #496b4c;
+	margin: 1em;
 }
 
 .proj-icons a:hover {
@@ -561,19 +570,7 @@ body {
 }
 
 /* Hidden projects to be revealed with "View More" button. */
-#proj-hid-1 {
-	display: none;
-}
-
-#proj-hid-2 {
-	display: none;
-}
-
-#proj-hid-3 {
-	display: none;
-}
-
-#proj-hid-4 {
+.proj-hidden {
 	display: none;
 }
 

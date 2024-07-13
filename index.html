@@ -39,7 +39,6 @@
                     <li><a href='files/resume.pdf' target='_blank' class='resume'>Resume</a></li>
                 </ul>
             </div>
-            
         </nav>
 
         <!-- Header section -->
@@ -75,8 +74,10 @@
             <div class='about-info'>
                 <div class="about-text">
                     <h2>Hello,</h2>
-                    <p>I am <span>Pauline Tang</span>, and I am from the <span>California Bay Area</span>. I currently study <span>computer science</span> at <span>UC Berkeley</span> and expect to graduate in <span>Spring 2024</span>.</p>
-                    <p>Outside of the computer screen, I enjoy <span>bullet journaling</span>, <span>sketching</span>, and going on <span>walks</span> with my dog, Lucky!</p>
+                    <p>I am <span>Pauline Tang</span>, and I am from the <span>California Bay Area</span>. I recently graduated from <span>UC Berkeley</span> with a <span>Bachelor of arts</span> in <span>computer science</span> in <span>Spring 2024</span>.</p>
+                    <p>Currently, I am enjoying some time off after graduating, traveling with family, spending time with friends, and putting the skills I learned to use by working on some fun side projects (check out my most recent project below!).</p>
+                    <p>I am also actively seeking new graduate software engineering roles where I can leverage my strong background in programming, full-stack development, and software engineering principles. I am eager to contribute to innovative projects and collaborate with a dynamic team to develop cutting-edge software solutions. If your organization is looking for a dedicated and skilled software engineer ready to make an impact, I would love to connect.</p>
+                    <p>Outside of the computer screen, I enjoy bullet journaling, sketching, and going on walks with my dog, Lucky 🐾 !</p>
                 </div>
                 <div class="about-img">
                     <img src="images/me4.PNG">
@@ -96,31 +97,45 @@
                             <li><span>CS 70:</span> Discrete Mathematics and Probability Theory</li>
                             <li><span>CS 61C:</span> Great Ideas in Computer Architecture (Machine Structures)</li>
                             <li><span>DATA C100:</span> Principles and Techniques of Data Science</li>
+                            <li><span>DATA 104:</span> Human Contexts and Ethics of Data</li>
                             <li><span>CS 162:</span> Operating Systems and Systems Programming</li>
                             <li><span>CS 188:</span> Introduction to Artificial Intelligence</li>
                             <li><span>CS 170:</span> Efficient Algorithms and Intractable Problems</li>
                             <li><span>CS 161:</span> Computer Security</li>
+                            <li><span>CS 186:</span> Database Systems</li>
+                            <li><span>CS 160:</span> User Interface Design & Development</li>
                             <li><span>INFO 153A:</span> Front-End Web Architecture</li>
+                            <li><span>INFO 153B:</span> Back-End Web Architecture</li>
                         </ul>
                     </div>
                     <div class='skills-tech'>
-                        <h2>LANGUAGES & TECHNOLOGIES</h2>
+                        <h2>LANGUAGES & FRAMEWORKS</h2>
                         <ul>
                             <li>Java</li>
                             <li>Python</li>
                             <li>C</li>
                             <li>HTML/CSS</li>
-                            <li>SQL</li>
                             <li>Javascript</li>
                             <li>React</li>
+                            <li>Flask</li>
+                            <li>Next.js</li>
                             <li>Go</li>
                             <li>RISC-V Assembly</li>
+                        </ul>
+                        <br>
+                        <h2>TECHNOLOGIES</h2>
+                        <ul>
+                            <li>SQL</li>
                             <li>Pandas</li>
                             <li>MySQL</li>
-                            <li>Apache Tomcat</li>
+                            <li>Regex</li>
+                            <li>NumPy</li>
+                            <li>SQLAlchemy</li>
+                            <li>JSP</li>
                             <li>Git</li>
                             <li>Linux</li>
-                            <li>Object-oriented Programming</li>
+                            <li>MongoDB</li>
+                            <li>Docker</li>
                         </ul>
                     </div>
                 </div>
@@ -132,13 +147,37 @@
 
         <!-- Projects section -->
         <section id='projects'>
-            <div class='project-head'>
-                <p id='proj-head-1'>and some</p>
-                <h1>Projects</h1>
-                <p id=proj-head-2>...that i've worked on</p>
+            <div class='project-head-container'>
+                <div class='project-head'>
+                    <p id='proj-head-1'>and some</p>
+                    <h1>Projects</h1>
+                    <p id=proj-head-2>...that i've worked on</p>
+                </div>
             </div>
 
             <div class='projects-container'>
+                <div class='proj'>
+                    <div class='proj-box-head'>
+                        <img src='images/tunein-img-dashboard1.png'>
+                        <h3>TUNEIN</h3>
+                    </div>
+                    <div class='proj-text'>
+                        <p>TuneIn is a web application leveraging the Spotify Web API to offer users detailed listening statistics, including their top tracks and top artists. It enables users to create personalized playlists directly within their Spotify account and employs OAuth for secure user authentication and data retrieval.</p>
+                        <div class='proj-skills'>
+                            <ul>
+                                <li>Next.js</li>
+                                <li>React</li>
+                                <li>Javascript</li>
+                                <li>Spotify API</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='proj-icons'>
+                        <a href='https://github.com/tangpauline/tunein' target='_blank'><i class="fa fa-github"></i></a>
+                        <a href='https://tunein-music.vercel.app/' target='_blank'><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+
                 <div class='proj'>
                     <div class='proj-box-head'>
                         <img src='images/planner-img.png'>
@@ -183,7 +222,7 @@
                     </div>
                 </div>
 
-                <div class='proj'>
+                <div class='proj proj-hidden'>
                     <div class='proj-box-head'>
                         <img src='images/gitlet-img.png'>
                         <h3>GITLET</h3>
@@ -204,7 +243,7 @@
                     </div>
                 </div>
 
-                <div class='proj' id='proj-hid-1'>
+                <div class='proj proj-hidden'>
                     <div class='proj-box-head'>
                         <img src='images/hangman-img.png'>
                         <h3>HANGMAN</h3>
@@ -224,7 +263,7 @@
                     </div>
                 </div>
 
-                <div class='proj' id='proj-hid-2'>
+                <div class='proj proj-hidden'>
                     <div class='proj-box-head'>
                         <img src='images/jump-img.png'>
                         <h3>JUMP</h3>
@@ -246,7 +285,7 @@
                     </div>
                 </div>
 
-                <div class='proj' id='proj-hid-3'>
+                <div class='proj proj-hidden'>
                     <div class='proj-box-head'>
                         <img src='images/enigma-img.png'>
                         <h3>ENIGMA</h3>
@@ -265,7 +304,7 @@
                     </div>
                 </div>
 
-                <div class='proj' id='proj-hid-4'>
+                <div class='proj proj-hidden'>
                     <div class='proj-box-head'>
                         <img src='images/ants-img.png'>
                         <h3>ANTS VS. SOMEBEES</h3>
@@ -327,7 +366,7 @@
 
         <!-- Footer section -->
         <footer>
-            <p>‧͙⁺˚*･༓☾ Copyright © 2023 Pauline Tang ☽༓･*˚⁺‧͙</p>
+            <p>‧͙⁺˚*･༓☾ Made by Pauline Tang 2024 ☽༓･*˚⁺‧͙</p>
         </footer>
     </body>
 
